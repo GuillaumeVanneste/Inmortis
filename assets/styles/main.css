@@ -1,0 +1,250 @@
+@font-face {
+    font-family: CalsonAntique;
+    src: url(../font/Calson/CaslonAntique.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: CalsonAntique;
+    src: url(../font/Calson/CaslonAntique-Bold.ttf);
+    font-weight: bold;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #231e24;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img{
+    width: 270px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: CalsonAntique;
+    font-weight: bold;
+}
+
+/*****************
+
+    LANDING
+
+*****************/
+
+.landing{
+    padding-top: 180px;
+    padding-bottom: 290px;
+    text-align: center;
+    background-image:url(../images/splash.gif);
+    background-size: cover;
+    background-position: right;
+}
+
+.landing h1{
+    font-family: CalsonAntique;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 0;
+    margin-bottom: 320px;
+    letter-spacing: -2px;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/button-background.png");
+    background-size: cover;
+    width: 330px;
+    height: 66px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: CalsonAntique;
+    font-weight: normal;
+    transition: color 300ms ease-in;
+    letter-spacing: 1px;
+}
+
+.download:hover{
+    color: red;
+}
+
+.presentation{
+    margin-top: 60px;
+}
+
+.presentation .trailer{
+    position: relative;
+    padding-top: 56.25%;
+    margin-top: 80px;
+}
+
+.presentation .trailer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(../images/trailer.png);
+    background-size: cover;
+}
+
+.presentation p{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+/*****************
+
+    FEATURES
+
+*****************/
+
+.features{
+    margin: 70px 25px;
+}
+
+.features h2{
+    margin-bottom: 0;
+}
+
+.features p{
+    margin-top: 0;
+}
+
+/*****************
+
+    Gallery
+
+*****************/
+
+.gallery h2{
+    text-align: center;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+/*****************
+
+    Newsletter
+
+*****************/
+
+.newsletter{
+    text-align: center;
+}
+
+/*****************
+
+    OUR TEAM
+
+*****************/
+
+.team h2{
+    text-align: center;
+}
+
+.team .profile-selection {
+    padding: 0;
+}
+
+.team .profile-selection img{
+    cursor: pointer;
+    width: 100%;
+}
+
+.team .profile-selection.active img{
+    border: 1px red solid;
+}
+
+.team .profile-card{
+    display: none;
+}
+
+.team .profile-card.active{
+    display: block;
+}
+
+/*****************
+
+    SN + FOOTER
+
+*****************/
+
+.social{
+    background: #161317;
+}
+
+.social h4{
+    line-height: 18px;
+}
+
+.social .links{
+    padding-top: 6px;
+}
+
+.social .links li{
+    display: inline;
+}
+
+.social img{
+    width: 100%;
+}
+
+.footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
