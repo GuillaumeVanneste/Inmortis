@@ -28,6 +28,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .logo img{
@@ -46,6 +47,7 @@ h1, h2, h3, h4, h5, h6{
 *****************/
 
 .landing{
+    position: relative;
     padding-top: 180px;
     padding-bottom: 290px;
     text-align: center;
@@ -54,11 +56,19 @@ h1, h2, h3, h4, h5, h6{
     background-position: right;
 }
 
+.landing .gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 60%, #231E24);
+}
+
 .landing h1{
     font-family: CalsonAntique;
     font-weight: bold;
     font-size: 72px;
-    line-height: 0;
     margin-bottom: 320px;
     letter-spacing: -2px;
 }
