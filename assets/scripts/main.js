@@ -4,10 +4,6 @@ const $profileSelections = $selection.querySelectorAll(".profile-selection")
 const $profile = document.querySelector(".profile")
 const $profileCards = $profile.querySelectorAll(".profile-card")
 
-
-console.log($profileSelections)
-console.log($profileCards)
-
 for (let i = 0; i < $profileSelections.length; i++) {
     const profile_selection = $profileSelections[i]
     const profile_card = $profileCards[i]

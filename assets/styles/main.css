@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5, h6{
 
 .landing h1{
     font-family: CalsonAntique;
-    font-weight: bold;
     font-size: 72px;
     margin-bottom: 320px;
     letter-spacing: -2px;
@@ -271,7 +270,22 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+/*****************
 
+    MEDIA
+
+*****************/
+
+@media screen and (max-width: 640px) {
+    .header{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .landing h1{
+        font-size: 56px;
+    }
+}
 
 
 
