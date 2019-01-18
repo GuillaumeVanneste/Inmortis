@@ -14,6 +14,7 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
+    font-size: 17px;
     color: #fff;
     background: #231e24;
 }
@@ -48,8 +49,8 @@ h1, h2, h3, h4, h5, h6{
 
 .landing{
     position: relative;
-    padding-top: 180px;
-    padding-bottom: 290px;
+    padding-top: 140px;
+    padding-bottom: 250px;
     text-align: center;
     background-image:url(../images/splash.gif);
     background-size: cover;
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 60%, #231E24);
+    z-index: 0;
 }
 
 .landing h1{
@@ -71,6 +73,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 72px;
     margin-bottom: 320px;
     letter-spacing: -2px;
+    z-index: 1;
 }
 
 .download{
@@ -88,6 +91,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: normal;
     transition: color 300ms ease-in;
     letter-spacing: 1px;
+    z-index: 1;
 }
 
 .download:hover{
@@ -117,8 +121,7 @@ h1, h2, h3, h4, h5, h6{
 .presentation p{
     color: white;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;;
 }
 
 
