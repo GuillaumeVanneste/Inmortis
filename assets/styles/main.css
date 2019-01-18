@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .download:hover{
-    color: red;
+    color: #D80A0A;
 }
 
 .presentation{
@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .presentation p{
-    font-size: 22px;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -153,13 +152,60 @@ h1, h2, h3, h4, h5, h6{
 
 .newsletter{
     text-align: center;
+    padding-top: 40px;
 }
+
+.newsletter h2{
+
+}
+
+.newsletter p{
+    margin-top: 40px;
+}
+
+.newsletter form {
+
+}
+
+.newsletter .subscribe{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.newsletter .subscribe:hover span{
+    color: #D80A0A;
+}
+
+.newsletter .subscribe span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/button-background.png");
+    background-size: cover;
+    width: 330px;
+    height: 66px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: CalsonAntique;
+    font-weight: normal;
+    transition: color 300ms ease-in;
+    letter-spacing: 1px;
+}
+
+
 
 /*****************
 
     OUR TEAM
 
 *****************/
+
+.team{
+    margin-top: 70px;
+}
 
 .team h2{
     text-align: center;
@@ -175,7 +221,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .team .profile-selection.active img{
-    border: 1px red solid;
+    border: 1px #D80A0A solid;
 }
 
 .team .profile-card{
@@ -194,10 +240,6 @@ h1, h2, h3, h4, h5, h6{
 
 .social{
     background: #161317;
-}
-
-.social h4{
-    line-height: 18px;
 }
 
 .social .links{
