@@ -25,11 +25,11 @@ body{
     justify-content: center;
 }
 
-.header{
+.header .desktop{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 2;
 }
 
 .logo img{
@@ -95,6 +95,15 @@ h1, h2, h3, h4, h5, h6{
 
 .download:hover{
     color: #D80A0A;
+}
+
+.landing .links{
+    z-index: 2;
+}
+
+.landing .links a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .presentation{
@@ -204,8 +213,6 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 1px;
 }
 
-
-
 /*****************
 
     OUR TEAM
@@ -274,10 +281,6 @@ h1, h2, h3, h4, h5, h6{
 *****************/
 
 @media screen and (max-width: 640px) {
-    .header{
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .landing h1{
         font-size: 56px;

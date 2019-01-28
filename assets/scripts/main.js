@@ -16,3 +16,12 @@ for (let i = 0; i < $profileSelections.length; i++) {
         profile_card.classList.add("active")
     })
 }
+
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
+
+const OS = navigator.platform;
+
+console.log(OS);

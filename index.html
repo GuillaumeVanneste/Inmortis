@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -22,21 +25,59 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo"><img src="assets/images/logo_inmortis_white.png" alt=""></div>
+        <div class="desktop hide-on-small-and-down">
+            <div class="logo"><img src="assets/images/logo_inmortis_white.png" alt=""></div>
+            <ul class="left">
+                <li><a class="sidenav-close" href="#game">About the game</a></li>
+                <li><a class="sidenav-close" href="#gallery">Gallery</a></li>
+                <li><a class="sidenav-close" href="#team">Our team</a></li>
+                <li><a class="sidenav-close" href="#">Kickstarter</a></li>
+            </ul>
+        </div>
+        <div class="mobile hide-on-med-and-up">
+            <nav class="transparent">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="col s2">
+                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        </div>
+                        <div class="col s8 center">
+                            <a href="#"><img style="width: 55%" src="assets/images/logo_inmortis_white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-
+    <ul id="slide-out" class="sidenav">
+        <li><a class="sidenav-close" href="#game">About the game</a></li>
+        <li><a class="sidenav-close" href="#gallery">Gallery</a></li>
+        <li><a class="sidenav-close" href="#team">Our team</a></li>
+        <li><a class="sidenav-close" href="#">Kickstarter</a></li>
+    </ul>
     <div class="landing">
         <div class="gradient"></div>
         <h1>Each paths might save you from madness...</h1>
-        <div class="flex hide-on-small-and-down"><a class="download" target="_blank" href="https://www.dropbox.com/s/8xyxnkc0hewutfa/Inmortis_0.33.zip?dl=0"><span>Download the demo</span></a></div>
     </div>
-    <div class="presentation">
+    <div class="presentation" id="game">
         <div class="row">
-            <div class="col m10 offset-m1">
+            <div class="col m5 offset-m1">
                 <p>
-                    The world order has been turned upside down by the sudden appearance of a strange pantheon. In this new order you will have to choose: Do you want to embrace emerging cults and lead to the accession of the gods or fight to banish them from your world ?
+                    The world order has been turned upside down by the sudden appearance of a strange pantheon. In this new order you will have to choose:
+                </p>
+                <p>
+                    Do you want to embrace emerging cults and lead to the accession of the gods or fight to banish them from your world ?
                     (But be careful, every fight has a price. What are you willing to sacrifice ? )
                 </p>
+            </div>
+            <div class="col m5">
+                <div class="flex hide-on-small-and-down" style="margin: 0 0 20px 0"><a class="download" target="_blank" href="https://www.dropbox.com/s/8xyxnkc0hewutfa/Inmortis_0.33.zip?dl=0"><span>Download for Windows</span></a></div>
+                <div class="flex hide-on-small-and-down" style="margin: 0 0 20px 0"><a class="download" target="_blank" href="https://www.dropbox.com/s/8xyxnkc0hewutfa/Inmortis_0.33.zip?dl=0"><span>Download for Mac</span></a></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m10 offset-m1">
                 <div class="trailer">
                     <iframe src="https://www.youtube.com/embed/PrYPqtWWB3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -69,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <h2>Gallery</h2>
         <div class="row">
             <div class="col s12 m6 l4 mb"><img src="assets/images/trailer.png" alt=""></div>
@@ -85,14 +126,14 @@
 
         <p>Subscribe to our mailing list!</p>
         <div class="row">
-            <form class="col s12 m4 offset-m4" action="">
+            <form class="col s12 m6 l4 offset-m3 offset-l4" action="">
                 <input type="email" name="email" placeholder="Email Address">
                 <div class="flex"><button type="submit" class="subscribe"><span>Subscribe</span></button></div>
             </form>
         </div>
 
     </div>
-    <div class="team">
+    <div class="team" id="team">
         <h2>Our Team</h2>
         <div class="row valign-wrapper">
             <div class="col m2 offset-m1 hide-on-small-and-down">
@@ -196,7 +237,7 @@
         <div class="links">
 
         </div>
-        <p>©2019 (Nom studio). ALL RIGHTS RESERVED.</p>
+        <p>©2019 Pecking Crow. ALL RIGHTS RESERVED.</p>
     </div>
 
     <script src="assets/scripts/jquery-3.3.1.min.js"></script>
