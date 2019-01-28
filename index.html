@@ -25,29 +25,22 @@
 </head>
 <body>
     <header class="header">
-        <div class="desktop hide-on-small-and-down">
-            <div class="logo"><img src="assets/images/logo_inmortis_white.png" alt=""></div>
-            <ul class="left">
-                <li><a class="sidenav-close" href="#game">About the game</a></li>
-                <li><a class="sidenav-close" href="#gallery">Gallery</a></li>
-                <li><a class="sidenav-close" href="#team">Our team</a></li>
-                <li><a class="sidenav-close" href="#">Kickstarter</a></li>
-            </ul>
-        </div>
-        <div class="mobile hide-on-med-and-up">
-            <nav class="transparent">
-                <div class="nav-wrapper">
-                    <div class="row">
-                        <div class="col s2">
-                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        </div>
-                        <div class="col s8 center">
-                            <a href="#"><img style="width: 55%" src="assets/images/logo_inmortis_white.png" alt=""></a>
-                        </div>
-                    </div>
+        <nav class="desktop transparent">
+            <div class="nav-wrapper valign-wrapper" style="height: 150%;">
+                <div class="brand-logo" style="height: 100%;"><img style="height: 100%" src="assets/images/logo_inmortis_white.png" alt=""></div>
+                <div class="brand-logo right hide-on-med-and-down">
+                    <ul id="nav-mobile">
+                        <li><a class="sidenav-close" href="#game">About the game</a></li>
+                        <li><a class="sidenav-close" href="#gallery">Gallery</a></li>
+                        <li><a class="sidenav-close" href="#team">Our team</a></li>
+                        <li><a class="sidenav-close" href="#">Kickstarter</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+                <div class="col s2">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
     </header>
     <ul id="slide-out" class="sidenav">
         <li><a class="sidenav-close" href="#game">About the game</a></li>
