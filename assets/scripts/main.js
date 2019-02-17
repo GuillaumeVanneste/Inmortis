@@ -4,6 +4,21 @@ const $profileSelections = $selection.querySelectorAll(".profile-selection")
 const $profile = document.querySelector(".profile")
 const $profileCards = $profile.querySelectorAll(".profile-card")
 
+/* Loader */
+
+const $loader = document.querySelector('.loadingScreen')
+let loaded = false
+
+window.addEventListener('load', (event) =>
+{
+    console.log(event)
+    $loader.classList.add('loaded')
+    loaded = true
+})
+
+/* end loader */
+
+
 for (let i = 0; i < $profileSelections.length; i++) {
     const profile_selection = $profileSelections[i]
     const profile_card = $profileCards[i]

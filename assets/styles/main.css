@@ -19,6 +19,18 @@ body{
     background: #231e24;
 }
 
+nav ul a {
+    font-family: CalsonAntique;
+    color: #fff;
+    font-size: 21px;
+    transition: all ease 400ms;
+}
+
+nav ul a:hover {
+    color: #D80A0A;
+    background-color: transparent;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -34,13 +46,39 @@ body{
     -webkit-box-shadow : 0 0 0 0;
 }
 
-.logo img{
+.footer .logo img{
     width: 270px;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: CalsonAntique;
     font-weight: normal;
+}
+
+/*****************
+
+    LOADING
+
+*****************/
+
+.loadingScreen
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    will-change: opacity;
+    z-index: 5;
+}
+
+.loadingScreen.loaded
+{
+    opacity: 0;
+    z-index: 1;
 }
 
 /*****************
@@ -109,7 +147,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .presentation{
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .presentation .trailer{
@@ -141,8 +179,8 @@ h1, h2, h3, h4, h5, h6{
 
 *****************/
 
-.features{
-    margin: 70px 25px;
+.features {
+    padding: 70px 25px 0 25px;
 }
 
 .features h2{
@@ -162,6 +200,10 @@ h1, h2, h3, h4, h5, h6{
     Gallery
 
 *****************/
+
+.gallery {
+    padding-top: 70px;
+}
 
 .gallery h2{
     text-align: center;
@@ -222,7 +264,7 @@ h1, h2, h3, h4, h5, h6{
 *****************/
 
 .team{
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 .team h2{
@@ -268,8 +310,22 @@ h1, h2, h3, h4, h5, h6{
     display: inline;
 }
 
-.social img{
-    width: 100%;
+.social svg #twitter,
+.social svg #discord,
+.social svg #gamejolt{
+    transition: fill ease 400ms;
+}
+
+.social a:hover #twitter,
+.social a:hover #discord,
+.social a:hover #gamejolt{
+    fill: #D80A0A;
+}
+
+.social a:focus #twitter,
+.social a:focus #discord,
+.social a:focus #gamejolt{
+    fill: #D80A0A;
 }
 
 .footer{
