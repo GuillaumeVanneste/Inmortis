@@ -19,11 +19,19 @@ body{
     background: #231e24;
 }
 
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 84px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 nav ul a {
     font-family: CalsonAntique;
     color: #fff;
-    font-size: 21px;
+    font-size: 24px;
     transition: all ease 400ms;
+    padding-left: 16px;
 }
 
 nav ul a:hover {
