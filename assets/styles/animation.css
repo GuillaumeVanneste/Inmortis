@@ -21,24 +21,24 @@
 @keyframes fade-right {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translate3d(-100px, 100px, 0);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0);
     }
 }
 
 @keyframes fade-left {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translate3d(100px, 100px, 0);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0);
     }
 }
 

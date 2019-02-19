@@ -9,11 +9,6 @@ jQuery(function($) {
         var offset = $(window).scrollTop() + $(window).height();
 
 
-        // Unbind scroll handler if we have no animatables
-        /*if ($animatables.length == 0) {
-            $(window).off('scroll', doAnimations);
-        }*/
-
         // Check all animatables and animate them if necessary
         $animatables.each(function(i) {
             var $animatable = $(this);
