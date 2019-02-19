@@ -17,6 +17,7 @@ body{
     font-size: 17px;
     color: #fff;
     background: #231e24;
+    overflow-x: hidden;
 }
 
 nav {
@@ -98,7 +99,7 @@ h1, h2, h3, h4, h5, h6{
 .landing{
     position: relative;
     padding-top: 140px;
-    padding-bottom: 250px;
+    padding-bottom: 450px;
     text-align: center;
     background-image:url(../images/splash01.png);
     background-size: cover;
