@@ -48,3 +48,18 @@ $(document).ready(function(){
         } // End if
     });
 });
+
+
+/* Loader */
+
+const $loader = document.querySelector('.loadingScreen')
+let loaded = false
+
+window.addEventListener('load', (event) =>
+{
+    console.log(event)
+    $loader.classList.add('loaded')
+    loaded = true
+})
+
+/* end loader */
