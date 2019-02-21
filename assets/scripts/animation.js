@@ -14,11 +14,10 @@ jQuery(function($) {
             var $animatable = $(this);
             if (($animatable.offset().top - $animatable.height() + 20) < offset) {
                 $animatable.removeClass('animatable').addClass('animated');
-            } else if (($animatable.offset().top - $animatable.height() + 20) > offset) {
+            } /*else if (($animatable.offset().top - $animatable.height() + 20) > offset) {
                 $animatable.removeClass('animated').addClass('animatable');
-            }
+            }*/
         });
-        console.log(offset)
     };
 
     // Hook doAnimations on scroll, and trigger a scroll

@@ -1,3 +1,4 @@
+/*
 const $selection = document.querySelector(".selection");
 const $profileSelections = $selection.querySelectorAll(".profile-selection");
 const $profile = document.querySelector(".profile");
@@ -15,7 +16,7 @@ for (let i = 0; i < $profileSelections.length; i++) {
         profile_card.classList.add("active");
     })
 }
-
+*/
 
 // SIDENAV
 $(document).ready(function(){
@@ -49,17 +50,17 @@ $(document).ready(function(){
     });
 });
 
-
-/* Loader */
+/*
+// Loader
 
 const $loader = document.querySelector('.loadingScreen')
 let loaded = false
 
 window.addEventListener('load', (event) =>
 {
-    console.log(event)
     $loader.classList.add('loaded')
     loaded = true
 })
 
-/* end loader */
+// End loader
+*/

@@ -16,10 +16,13 @@ body{
     padding: 0;
     font-size: 17px;
     color: #fff;
+    background-color: #231E24;
+    /*
     background-image:url(../images/splash02.gif);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    */
     overflow-x: hidden;
 }
 
@@ -84,7 +87,7 @@ h1, h2, h3, h4, h5, h6{
     LOADING
 
 *****************/
-
+/*
 .loadingScreen
 {
     position: absolute;
@@ -104,7 +107,7 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0;
     z-index: 1;
 }
-
+*/
 /*****************
 
     LANDING
@@ -172,19 +175,6 @@ h1, h2, h3, h4, h5, h6{
 .landing .links a{
     color: #fff;
     text-decoration: none;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 20px;
-    z-index: -1;
 }
 
 .presentation{
@@ -287,7 +277,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .newsletter .subscribe{
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     margin-top: 40px;
