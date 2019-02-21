@@ -119,9 +119,15 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 140px;
     padding-bottom: 450px;
     text-align: center;
-    background-image:url(../images/Artwork1920.png);
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.landing img{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
 }
 
 .landing .gradient{
@@ -388,7 +394,7 @@ h1, h2, h3, h4, h5, h6{
 
 .lazy-load
 {
-    background: #cccccc;
+    background: #161317;
     font-size: 0;
 }
 
