@@ -18,6 +18,10 @@ for (let i = 0; i < $profileSelections.length; i++) {
 }
 */
 
+// Lazy Load
+const lazyLoading = new LazyLoading()
+lazyLoading.parse()
+
 // SIDENAV
 $(document).ready(function(){
     $('.sidenav').sidenav();

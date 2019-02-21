@@ -382,6 +382,31 @@ h1, h2, h3, h4, h5, h6{
 
 /*****************
 
+    LAZY LOAD
+
+*****************/
+
+.lazy-load
+{
+    display: inline-block;
+    background: #cccccc;
+    font-size: 0;
+}
+
+.lazy-load img
+{
+    opacity: 0;
+    transition: opacity 0.5s;
+    will-change: opacity;
+}
+
+.lazy-load.loaded img
+{
+    opacity: 1;
+}
+
+/*****************
+
     MEDIA
 
 *****************/
